@@ -2,20 +2,19 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
-use App\Models\Work;
 use App\Models\Rest;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
-class DatabaseSeeder extends Seeder
+class RestTableSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
-        $this->call(RestTableSeeder::class);
+        Rest::factory()->count(10)->create();
     }
 }
