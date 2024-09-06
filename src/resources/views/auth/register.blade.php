@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>attendance</title>
   <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <link rel="stylesheet" href="{{ asset('css/register.css') }}" />
 </head>
 <body>
@@ -17,6 +18,11 @@
         </div>
   </header>
   <main>
+    <div class="header__wrap">
+        <span class="header__text">
+            会員登録
+        </span>
+    </div>
     <form class="form__wrap" action="{{ route('register') }}" method="post">
         @csrf
         <div class="form__content">

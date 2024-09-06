@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>attendance</title>
   <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <link rel="stylesheet" href="{{ asset('css/login.css') }}" />
 </head>
 <body>
@@ -17,9 +18,6 @@
         </div>
   </header>
   <main>
-    <div class="login-error__message">
-            <span class="login-error__message-text">{{ session('message') }}</span>
-    </div>
     <div class="header__wrap">
         <span class="header__text">
             ログイン

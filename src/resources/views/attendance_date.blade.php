@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>attendance</title>
   <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <link rel="stylesheet" href="{{ asset('css/attendance.css') }}" />
 </head>
 <body>
@@ -64,6 +65,7 @@
             @endforeach
         </table>
     </div>
+    {{ $users->links('vendor/pagination/paginate') }}
   </main>
   <footer>
         <div class="footer__item">
